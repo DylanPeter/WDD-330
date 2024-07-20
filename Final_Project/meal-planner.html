@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <h1>Recipe Finder and Meal Planner</h1>
+        </div> 
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="meal-planner.html">Meal Planner</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search">
+            <h2>Find a Recipe</h2>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Search for recipes...">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section id="meal-planner">
+            <h2>Your Meal Plan</h2>
+            <div id="meal-plan-container" class="grid-container">
+                <!-- Meal plan items will be inserted here by JavaScript -->
+            </div>
+        </section>
+        <section id="add-meal">
+            <h2>Add a Meal</h2>
+            <form id="add-meal-form">
+                <input type="text" id="meal-name" placeholder="Meal Name" required>
+                <input type="text" id="meal-description" placeholder="Meal Description" required>
+                <button type="submit">Add Meal</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Finder and Meal Planner. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/meal-planner.js"></script>
+    <script src="scripts/theme.js"></script>
+
+</body>
+</html>
