@@ -133,7 +133,7 @@ async function fetchRecipes() {
 
 async function displayFeaturedRecipes() {
     const recipes = await fetchRecipes();
-    const featuredRecipes = getRandomRecipes(recipes, 8); // Change number of featured recipes as needed
+    const featuredRecipes = getRandomRecipes(recipes, 6); // Change number of featured recipes as needed
 
     const featuredCardsContainer = document.getElementById('recipe-cards');
     featuredCardsContainer.innerHTML = ''; // Clear existing content
